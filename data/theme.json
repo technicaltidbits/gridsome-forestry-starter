@@ -1,8 +1,8 @@
 {
-  "footer": "Copyright &copy; 2019",
+  "footer": "Copyright Technical Tidbits &copy; 2020",
   "dark_mode": false,
-  "site_name": "Nichlas W. Andersen",
-  "site_description": "Creative technologist",
-  "hero_title": "Simplicity. Aesthetics. Value.",
-  "hero_subtitle": "Hi there, I'm an independent Digital Designer &amp; Art Director focused on digital design for brands that like to have fun."
+  "site_name": "Technical Tidbits",
+  "site_description": "A blog for technical writing tidbits",
+  "hero_title": "Technical Tidbits",
+  "hero_subtitle": "Technical Tidbits is home to various thought sketches and tutorials related to technical communication and UX/UI design."
 }

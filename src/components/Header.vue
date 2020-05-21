@@ -2,17 +2,11 @@
     <header class="header" :class="{sticky: $route.path === '/' || $route.path.includes('/projects/')}">
         <div class="container">
             <div class="left">
-                <g-link :to="{ name: 'home' }" class="home-link">
-                    <img 
-                        src="../../static/logo.svg"
-                        :alt="settings.site_name" 
-                        class="logo"
-                    />
-                </g-link>
+                <g-link :to="{ name: 'home' }" class="home-link">Home</g-link>
             </div>
             <nav class="nav right">
                 <g-link class="nav__link" to="/journal">Journal</g-link>
-                <g-link class="nav__link" to="/contact">Say Hi!</g-link>
+                <g-link class="nav_link" to="/resources">Resources</g-link>
             </nav>
         </div>
     </header>
@@ -33,6 +27,8 @@ export default {
 .header {
     position: relative;
     height: 6rem;
+    font-weight: 600;
+    font-size: 0.9rem;
     z-index: 10;
 }
 .header.sticky {
