@@ -1,7 +1,7 @@
 ---
 title: Install the Vale CLI (Windows)
 date: 2020-05-12
-author: Deanna Thompson
+author: Deanna 
 ---
 To install Vale on your computer, you'll need to use a package manager. Package managers allow you to install and update packages and libraries. 
 

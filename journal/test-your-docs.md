@@ -1,7 +1,7 @@
 ---
 date: 2020-04-25
 title: Two reasons why you should test your docs
-author: Deanna Thompson
+author: Deanna 
 excerpt: Two major reasons to test your documentation
 ---
 I forget how I stumbled about the topic of testing documentation, but I think it had something to do with Write the Docs. I knew enough about testing code, but I didn't know there were tools out there to test documentation. After poking around with a few tools and doing some reading, I've seen the light. And I want to share that light with you. 

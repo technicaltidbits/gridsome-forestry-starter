@@ -1,7 +1,7 @@
 ---
 date: 2020-05-02
 title: "Learn Vale: an introduction"
-author: Deanna Thompson
+author: Deanna 
 excerpt: One technical writer's journey in learning more about testing documentation.
 ---
 My journey into learning more about testing documentation began a few months ago. I joined the Write the Docs [Slack](https://www.writethedocs.org/slack/) group because I wanted to learn more about technical writing trends and tools. As I learned more about technical writing tools and processes, one term came up a few times: docs as code. 
