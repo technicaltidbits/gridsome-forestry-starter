@@ -1,6 +1,6 @@
 ---
 date: 2020-05-02
-title: "Testing documentation with Vale: an introduction"
+title: "Learn Vale: an introduction"
 author: Deanna Thompson
 excerpt: One technical writer's journey in learning more about testing documentation.
 ---

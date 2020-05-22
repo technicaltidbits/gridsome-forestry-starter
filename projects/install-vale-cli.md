@@ -11,7 +11,7 @@ project_bg_color: ''
 project_fg_color: ''
 
 ---
-In this tutorial, you'll learn how to install Vale, a style linter. This tool allows you to test your doc files for style and grammar. This is the first in a three part about installing Vale.
+In this tutorial, you'll learn how to install Vale, a style linter. This tool allows you to test your doc files for style and grammar. This is the first in a three part series about installing Vale.
 
 ## Assumptions
 
