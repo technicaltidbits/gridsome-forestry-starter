@@ -18,8 +18,11 @@ export default {
 </script>
 
 <style scoped>
-.footer, p {
+.footer {
     font-size: 0.8rem;
     padding: 6rem 0;
+}
+p {
+    font-size: 0.8rem;
 }
 </style>
