@@ -2,6 +2,7 @@
     <footer class="footer">
         <div class="container">
             <span v-html="settings.footer" />
+            <p>Read my <a href="https://www.technicaltidbits.net/release-notes">release notes.</a></p>
         </div>
     </footer>
 </template>
