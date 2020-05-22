@@ -27,6 +27,7 @@
             <ul>
                 <li><a href="https://www.ryanckulp.com/learn-to-code/">The Best Post Ever on Learning How to Code</a></li>
                 <li><a href="https://idratherbewriting.com/learnapidoc">Documenting APIs: A guide for technical writers and engineers</a></li>
+                <li><a href="https://contentdesign.london/content-design/user-stories-and-job-stories/">User stories and job stories</a></li>
             </ul>
             <h2>Software</h2>
             <ul>
