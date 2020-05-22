@@ -22,4 +22,7 @@ export default {
     font-size: 0.8rem;
     padding: 6rem 0;
 }
+p {
+    font-size: 0.8rem;
+}
 </style>
