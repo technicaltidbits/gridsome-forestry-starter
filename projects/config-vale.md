@@ -33,6 +33,9 @@ StylesPath = styles
 
 MinAlertLevel = suggestion
 
+[formats]
+mdx = md
+
 [*] 
 BasedOnStyles = Vale
 ```
@@ -53,6 +56,8 @@ If you want, you can configure Vale to show errors only, errors and warnings, or
 ```ini
 2 errors, 0 warnings and 0 suggestions in 1 file.
 ```
+
+//TODO add formats
 
 ### BasedOnStyles
 
