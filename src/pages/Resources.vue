@@ -22,11 +22,6 @@
       <ul>
         <li>
           <a
-            href="https://www.ryanckulp.com/learn-to-code/"
-          >The Best Post Ever on Learning How to Code</a>
-        </li>
-        <li>
-          <a
             href="https://idratherbewriting.com/learnapidoc"
           >Documenting APIs: A guide for technical writers and engineers</a>
         </li>
