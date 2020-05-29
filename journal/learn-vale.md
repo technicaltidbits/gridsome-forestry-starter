@@ -1,6 +1,6 @@
 ---
 date: 2020-05-02
-title: "Learn Vale: an introduction"
+title: "Linting files with Vale: an introduction"
 author: Deanna 
 excerpt: One technical writer's journey in learning more about testing documentation.
 ---
@@ -24,11 +24,11 @@ If you read my previous [post](https://technicaltidbits.net/journal/test-your-do
 
 Two popular linters I've learned about are write-good and Vale. Both are useful for writers looking to make sure that their documentation has a consistent style, consistent tone, and no spelling/grammar errors.
 
-If you're interested in using Vale, you can either use the desktop application, Vale Server, or the command-line interface (CLI) for linting. I personally like Vale because you can customize it to use third-party style guides or even create your own rules specific to your company's brand guidelines. 
+If you're interested in using Vale, you can either use the desktop application, Vale Server, or the command-line interface (CLI) for linting. I personally like Vale because you can customize it to use third-party styles or even create your own rules specific to your company's brand guidelines. 
 
 Because docs as code and testing documentation are growing in popularity, I thought it'd be useful to write a three-part series that teaches the basics of using Vale. This series will focus on the CLI, not the application.
 
-By the end of the series, you'll know how to install, configure, and apply Vale to your own documentation files. Look out for part one soon!
+By the end of the series, you'll know how to install, configure, and lint your own documentation files. Look out for part one soon!
 
 ## Further reading
 

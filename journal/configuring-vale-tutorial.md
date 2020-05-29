@@ -1,14 +1,15 @@
 ---
-date: 2020-05-28
-title: "How to apply the Vale CLI"
+date: 2020-05-29
+title: "How to lint your files with Vale"
 author: Deanna 
-excerpt: Learn how to apply the Vale CLI to Markdown files in this tutorial.
+excerpt: Learn how to lint Markdown files with Vale in this tutorial.
 ---
 
 ## Prerequisites
 
 * A code editor, like VS Code or Atom
-* The Vale-compatible implementation of the Microsoft Style Guide, which you can download [here](https://github.com/errata-ai/Microsoft/releases/download/v0.7.0/Microsoft.zip).
+* The Vale-compatible implementation of the Microsoft Style Guide, which you can download [here](https://github.com/errata-ai/Microsoft/releases/download/v0.7.0/Microsoft.zip)
+* The Vale [CLI](https://errata-ai.gitbook.io/vale/)
 
 ## Assumptions
 
@@ -20,7 +21,7 @@ excerpt: Learn how to apply the Vale CLI to Markdown files in this tutorial.
 In the terminal, create a new folder called `vale-tutorial`:
 
 ```bash
-user$ mkdir vale-tutorial
+$ mkdir vale-tutorial
 ```
 
 ## Step 2. Add project files
@@ -28,25 +29,25 @@ user$ mkdir vale-tutorial
 Change directories to the `vale-tutorial` folder:
 
 ```bash
-user$ cd vale-tutorial
+$ cd vale-tutorial
 ```
 
 Create a `.vale.ini` file in the `vale-tutorial` folder:
 
 ```bash
-user$ touch .vale.ini
+$ touch .vale.ini
 ```
 
 Next, create a Markdown file called `sample-file`:
 
 ```bash
-user$ touch sample-file.md
+$ touch sample-file.md
 ```
 
 Finally, create a `styles` folder:
 
 ```bash
-user$ mkdir styles 
+$ mkdir styles 
 ```
 
 Your project structure now looks like this:
@@ -79,8 +80,6 @@ In the `.vale.ini` file, set the `StylesPath` to `styles`. Remember: this is whe
 
 Next, set `MinAlertLevel` to `suggestions`. If you remember, you can set this value to show errors, errors and warnings, or errors, warnings, and suggestions. 
 
-//TODO format
-
 ### BasedOnStyles
 
 Set `BasedOnStyles` to `Vale, Microsoft`. Don't forget to add [\*] so these styles are applied to all files.
@@ -91,9 +90,6 @@ Your `.vale.ini` file looks like this once you're done:
 StylesPath = styles
 
 MinAlertLevel = suggestions
-
-[formats]
-mdx = md
 
 [*] 
 BasedOnStyles = Vale, Microsoft
@@ -113,13 +109,13 @@ Some of the errors are a bit obvious (e.g. "sampl" for "sample"), but the point 
 
 ## Step 6. Run the linter
 
-In your code editor, run the command `vale sample-file.md`. You'll see the errors, warnings, and suggestions Vale finds in the files, in addition to the number of errors, warnings, and suggestions:
+From the terminal, run the command `vale sample-file.md`. You'll see the errors, warnings, and suggestions Vale finds in the files, in addition to the number of errors, warnings, and suggestions:
 
 ```ini
 6 errors, 4 warnings and 5 suggestions in 1 file.
 ```
 
-You can see that most of the errors, warnings, and suggestions break Microsoft's rules. `Vale.Spelling` caught several typos: 
+`Vale.Spelling` identified several typos: 
 
 ```ini
 1:11   error       Did you really mean 'sampl'?    Vale.Spelling
@@ -128,3 +124,33 @@ You can see that most of the errors, warnings, and suggestions break Microsoft's
 6:17   error       Did you really mean             Vale.Spelling            
                     'developr'? 
 ```
+
+`Microsoft.We` identified use of the first-person pronoun "we." `Microsoft.Vocab` caught several words that aren't on the word list:
+
+```ini
+ 1:27   warning     Try to avoid using              Microsoft.We             
+                    first-person plural like 'we'.   
+ 2:83   suggestion  Verify your use of 'cool' with  Microsoft.Vocab          
+                    the A-Z word list.    
+ 6:200  suggestion  Verify your use of 'assure'     Microsoft.Vocab          
+                    with the A-Z word list.                      
+```
+
+Notice that the `Vale.Spelling` has `error` level severity, while `Microsoft.Vocab` has `suggestion` level severity. This is how the rules are structured when you first download the styles, but you can change them, if you want. I'll talk about this in the next tutorial.
+
+## Key takeaways
+
+* Your `.vale.ini` file is 1) required and 2) controls Vale's behavior. 
+* Your `.vale.ini` file should be in the root of your project.
+* Any third-party styles should be in your `styles` folder, and included in your `.vale.ini` file.
+* The `.vale.ini` file can be customized to show errors, errors and warnings, or errors, warnings, and suggestions.
+* To lint a file, use the command `vale` `filename`.  
+  
+## Conclusion
+
+Now that you have Vale installed on your computer, you can start linting your own files to make sure they're error-free and consistent in style. Next, you'll learn how to customize a `vale.ini` file and modify rules.
+
+## Links to learn more
+
+* [Vale's documentation](https://errata-ai.gitbook.io/vale/)
+* [Vale's style library](https://github.com/errata-ai/styles)
