@@ -7,13 +7,13 @@ excerpt: Learn how to lint Markdown files with Vale in this tutorial.
 
 ## Prerequisites
 
-* A code editor, like VS Code or Atom
+* A code editor, like VS Code, Sublime, or Atom
 * The Vale-compatible implementation of the Microsoft Style Guide, which you can download [here](https://github.com/errata-ai/Microsoft/releases/download/v0.7.0/Microsoft.zip)
 * The Vale [CLI](https://errata-ai.gitbook.io/vale/)
 
 ## Assumptions
 
-* You've read [this](https://technicaltidbits.net/projects/config-vale/) post about the basics of the Vale configuration file.
+* You've read [this](https://technicaltidbits.net/projects/configuring-vale/) post about the basics of Vale's configuration file.
 * You have some familiarity with the command line.
 
 ## Step 1. Create project folder
@@ -38,7 +38,7 @@ Create a `.vale.ini` file in the `vale-tutorial` folder:
 $ touch .vale.ini
 ```
 
-Next, create a Markdown file called `sample-file`:
+Next, create a Markdown file called `sample-file` in the `vale-tutorial` folder:
 
 ```bash
 $ touch sample-file.md
@@ -60,7 +60,7 @@ vale-tutorial
 
 ## Step 3. Add Microsoft rules to styles folder
 
-Download and open the zip file containing the Microsoft style guide's rules. Then move the `Microsoft` folder to the `styles` folder. Now, your project structure looks like this:
+Download and open the zip file containing the Vale-compatible implementation of the Microsoft Writing Style Guide. Then move the `Microsoft` folder to the `styles` folder. Now, your project structure looks like this:
 
 ```
 vale-tutorial
@@ -72,9 +72,11 @@ vale-tutorial
 
 ## Step 4. Edit the .vale.ini file in your code editor
 
+Open your code editor now, and open the `vale-tutorial` folder. Click on the `.vale.ini` file to edit it. The first property to add is `StylesPath`.
+
 ### StylesPath
 
-In the `.vale.ini` file, set the `StylesPath` to `styles`. Remember: this is where you tell Vale where to look for any external styles. 
+In the `.vale.ini` file, set the `StylesPath` to `styles`. Remember: this is where you tell Vale where to look for any third-party styles. 
 
 ### MinAlertLevel
 
@@ -91,7 +93,7 @@ StylesPath = styles
 
 MinAlertLevel = suggestions
 
-[*] 
+[*] //don't forget the asterisk!
 BasedOnStyles = Vale, Microsoft
 ```
 
@@ -104,8 +106,6 @@ Copy these three paragraphs and paste them into the `sample-file.md` file:
 > `In this tutorial, you will learn how to install Vale, a style linter this tool allows you to tst your doc file for style and grammar.`
 
 > `When a software developr tests their code, he may test the application's functionality or look for any security issues in their code. When technical writers test their documentation, we may check to assure that the links are not broken, the style is consistent, and that there are not grammar, spelling, or punctuation errors.`
-
-Some of the errors are a bit obvious (e.g. "sampl" for "sample"), but the point is to show you how Vale brings these errors to your attention so you can address them *before* you publish your documentation.
 
 ## Step 6. Run the linter
 
@@ -136,7 +136,7 @@ From the terminal, run the command `vale sample-file.md`. You'll see the errors,
                     with the A-Z word list.                      
 ```
 
-Notice that the `Vale.Spelling` has `error` level severity, while `Microsoft.Vocab` has `suggestion` level severity. This is how the rules are structured when you first download the styles, but you can change them, if you want. I'll talk about this in the next tutorial.
+Notice that the `Vale.Spelling` has `error` level severity, while `Microsoft.Vocab` has `suggestion` level severity. This is how the rules are structured when you first download them, but you can change them, if you want. I'll talk about this in the next tutorial.
 
 ## Key takeaways
 
@@ -148,9 +148,11 @@ Notice that the `Vale.Spelling` has `error` level severity, while `Microsoft.Voc
   
 ## Conclusion
 
-Now that you have Vale installed on your computer, you can start linting your own files to make sure they're error-free and consistent in style. Next, you'll learn how to customize a `vale.ini` file and modify rules.
+Now that you have Vale installed on your computer, you can start linting your own files to make sure they're error-free and consistent in style. Next, you'll learn how to customize a `vale.ini` file and modify style rules.
 
 ## Links to learn more
 
 * [Vale's documentation](https://errata-ai.gitbook.io/vale/)
 * [Vale's style library](https://github.com/errata-ai/styles)
+
+##### Have any trouble? Find any bugs? File a GitHub [issue](https://github.com/technicaltidbits/gridsome-forestry-starter/issues) to let me know.
