@@ -58,7 +58,7 @@ vale-tutorial
 └── styles  
 ```
 
-## Step 3. Add Microsoft rules to styles folder
+## Step 3. Add Microsoft styles to styles folder
 
 Download and open the zip file containing the Vale-compatible implementation of the Microsoft Writing Style Guide. Then move the `Microsoft` folder to the `styles` folder. Now, your project structure looks like this:
 
@@ -115,6 +115,8 @@ From the terminal, run the command `vale sample-file.md`. You'll see the errors,
 6 errors, 4 warnings and 5 suggestions in 1 file.
 ```
 
+### The results 
+
 `Vale.Spelling` identified several typos: 
 
 ```ini
@@ -142,17 +144,19 @@ Notice that the `Vale.Spelling` has `error` level severity, while `Microsoft.Voc
 
 * Your `.vale.ini` file is 1) required and 2) controls Vale's behavior. 
 * Your `.vale.ini` file should be in the root of your project.
-* Any third-party styles should be in your `styles` folder, and included in your `.vale.ini` file.
+* Any third-party styles should be in your `styles` folder.
 * The `.vale.ini` file can be customized to show errors, errors and warnings, or errors, warnings, and suggestions.
 * To lint a file, use the command `vale` `filename`.  
   
 ## Conclusion
 
-Now that you have Vale installed on your computer, you can start linting your own files to make sure they're error-free and consistent in style. Next, you'll learn how to customize a `vale.ini` file and modify style rules.
+Now that you have Vale installed on your computer, you can start linting your own files to make sure they're error-free and consistent in style. This doesn't necessarily have to be documentation files, by the way; you can use Vale's default style to help with editing blog posts and emails.
+
+Next, you'll learn how to customize a `vale.ini` file and modify style rules! 
 
 ## Links to learn more
 
 * [Vale's documentation](https://errata-ai.gitbook.io/vale/)
 * [Vale's style library](https://github.com/errata-ai/styles)
 
-##### Have any trouble? Find any bugs? File a GitHub [issue](https://github.com/technicaltidbits/gridsome-forestry-starter/issues) to let me know.
+##### Have any trouble with the tutorial? Find any bugs? File a GitHub [issue](https://github.com/technicaltidbits/gridsome-forestry-starter/issues) to let me know.
