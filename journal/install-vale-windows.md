@@ -5,7 +5,7 @@ author: Deanna
 ---
 To install Vale on your computer, you'll need to use a package manager. Package managers allow you to install and update packages and libraries. 
 
-Windows users can install Vale using [**Chocolatey**][Chocolatey link]. If you've already installed Chocolatey, skip to [step two](#heading-step-two:-install-vale). Otherwise, continue reading the instructions below. 
+Windows users can install Vale using [**Chocolatey**][Chocolatey link]. If you've already installed Chocolatey, skip to step two. Otherwise, continue reading the instructions below. 
 
 ---
 
