@@ -1,7 +1,7 @@
 ---
 date: 2020-05-11
 year: 2020
-title: "Vale Series: Learn the Vale CLI (Part One)"
+title: "Vale Series: How to install the Vale CLI (1/3)"
 category: Identity
 thumbnail: "/uploads/vale-demo.png"
 categories:
@@ -11,7 +11,7 @@ project_bg_color: ''
 project_fg_color: ''
 
 ---
-In this tutorial, you'll learn how to install Vale, a style linter. This tool allows you to test your doc files for style and grammar. This is the first in a three part series about installing Vale.
+In this tutorial, you'll learn how to install Vale, a style linter. This tool allows you to lint your doc files. This is the first in a three-part series about using Vale.
 
 ## Assumptions
 

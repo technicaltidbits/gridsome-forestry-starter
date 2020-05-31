@@ -5,7 +5,7 @@ author: Deanna
 ---
 To install Vale on your computer, you'll need to use a package manager. Package managers allow you to install and update packages and libraries. 
 
-The best package manager for macOS is [**Homebrew**][Homebrew link]. If you've already installed Homebrew, skip to [step two](#heading-step-two:-install-vale). Otherwise, continue reading the instructions below.
+The best package manager for macOS is [**Homebrew**][Homebrew link]. If you've already installed Homebrew, skip to step two. Otherwise, continue reading the instructions below.
 
 ---
 
